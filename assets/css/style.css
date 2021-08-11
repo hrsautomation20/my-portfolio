@@ -1,0 +1,19 @@
+/* Remove default html margin, padding and assign box-sizing to border-box  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global variable definitions */
+:root {
+    --header-footer-background-color: #404040;
+    --lightskyblue: lightskyblue;
+    --lightgray: lightgray;
+    --about-me-work-border: #333366;
+    --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
+    /* Fontstyling */
+    --fontcg: 'Roboto', 'Style Script', 'cursive', sans-serif;
+
+
+}
