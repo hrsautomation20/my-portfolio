@@ -13,7 +13,87 @@
     --about-me-work-border: #333366;
     --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
     /* Fontstyling */
-    --fontcg: 'Roboto', 'Style Script', 'cursive', sans-serif;
-
-
+    --custom-font-family: 'Roboto', 'Style Script', 'cursive', sans-serif;
 }
+
+/* =============== SEMANTIC CSS CODE (START) ===============   */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER STYLING (START)  */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: var(--header-footer-background-color);
+}
+
+header h1 {
+    padding: 0px 0px 0px 50px;
+    /* font-family: 'Style Script', sans-serif; */
+    /* font-size: 2.8vw; */
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 0px;
+    margin: 15px;
+}
+
+header nav ul li {
+    /*Viewport font-size to help with the responsiveness of the web page */
+    font-size: 1.8vw;
+    /* Align nave element to closely match the header h1 element*/
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+header a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--lightskyblue);
+    color: var(--lightskyblue);
+}
+
+/* HEADER STYLING (END)  */
+
+/* BODY STYLING (START)  */
+body {
+    background-color: var(--lightgray);
+    /* Apply background to all of the body of the page */
+    /* googleapis font family Karla */
+    font-family: var(--custom-font-family);
+}
+
+/* BODY STYLING (END)  */
+
+/* FOOTER STYLING (START)  */
+footer {
+    /* Apply background to all of the body of the page */
+    background-color: var(--header-footer-background-color);
+    color: var(--lightskyblue);
+    /* Title color */
+}
+
+footer a {
+    text-decoration: none;
+    border-bottom: 2px solid var(--lightskyblue);
+    /* Border bottom */
+    color: var(--lightskyblue);
+    /* anchor text color */
+    font-size: 1.8vw;
+    /* View port font-size to help with responsiveness */
+    font-weight: bold;
+}
+
+/* FOOTER STYLING (END)  */
