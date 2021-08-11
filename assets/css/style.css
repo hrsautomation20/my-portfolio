@@ -37,6 +37,8 @@ header h1 {
     /* font-size: 2.8vw; */
 }
 
+
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -88,12 +90,9 @@ footer {
 footer a {
     text-decoration: none;
     border-bottom: 2px solid var(--lightskyblue);
-    /* Border bottom */
     color: var(--lightskyblue);
-    /* anchor text color */
     font-size: 1.8vw;
-    /* View port font-size to help with responsiveness */
-    font-weight: bold;
+   
 }
 
 /* FOOTER STYLING (END)  */
@@ -129,10 +128,11 @@ footer a {
     align-items: flex-end;
     background-image: url(/assets/images/image.jpg);
 }
+
 .hero-subtitle {
     padding: 0px 15px 15px 0px;
 
-} 
+}
 
 .span-background {
     background-color: var(--lightskyblue);
@@ -151,6 +151,7 @@ footer a {
     opacity: .95;
     font-size: 30px;
 }
+
 .span-background.lower-text {
     font-size: small;
 }
@@ -187,4 +188,132 @@ footer a {
 .footer-grid-item.github,
 .footer-grid-item.linkedin {
     grid-row: 2;
+}
+
+.about-me-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.about-me-grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+}
+
+.about-me-item.about-me-title {
+    padding: 0px 10px 0px 0px;
+    font-size: 35px;
+    grid-row: 1 /span 4;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border);
+}
+
+.about-me-item.p1 {
+    padding-left: 10px;
+    grid-column: 2 /span 4;
+    grid-row: 1/ span 2;
+    line-height: 1.5rem;
+}
+
+.about-me-item.p2 {
+    padding-left: 10px;
+    grid-column: 2 /span 4;
+    grid-row: 3 /span 2;
+    line-height: 1.5rem;
+}
+
+.work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.work-grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 2fr);
+    grid-template-rows: repeat(13, 1fr);
+    gap: 10px 10px;
+}
+
+.work-item.work-title {
+    padding: 10px 10px 0px 0px;
+    font-size: 35px;
+    grid-row: 1 /span 12;
+    text-align: right;
+    border-right: 2px solid var(--about-me-work-border);
+    overflow-wrap: anywhere;
+}
+
+.work-item-project.code-refactor {
+    grid-column: 2 /span 4;
+    grid-row: 1 / span 6;
+    background-image: url("../images/horiseon.png");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+    border: .25vw solid var(--rgba-border-color-opacity);
+}
+
+.work-item-project.led-wall {
+    grid-column: 2 /span 2;
+    grid-row: 7 / span 3;
+    background-image: url("../images/led.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+    border: .25vw solid var(--rgba-border-color-opacity);
+}
+
+.work-item-project.pastel-puzzels {
+    grid-column: 4 / span 2;
+    grid-row: 7 / span 3;
+    background-image: url("../images/puzzels.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+    border: .25vw solid var(--rgba-border-color-opacity);
+}
+
+.work-item-project.run-buddy {
+    grid-column: 4 / span 2;
+    grid-row: 10 / span 3;
+    background-image: url("../images/runbuddy.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+    border: .25vw solid var(--rgba-border-color-opacity);
+}
+
+.work-item-project.calculator {
+    grid-column: 2 / span 2;
+    grid-row: 10 / span 3;
+    background-image: url("../images/calculator.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+    border: .25vw solid var(--rgba-border-color-opacity);
+}
+
+.work-item-project.ghost-item {
+    grid-column: 4/span 1;
+    opacity: 0;
 }
