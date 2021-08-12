@@ -535,3 +535,43 @@ footer a {
         margin-top: 10px;
     }
 }
+
+@media screen and(max-width: 575px) {
+    header a {
+        font-size: 4vw;
+    }
+
+    header nav ul {
+        padding-right: 0px;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        padding: 2px 2px 2px 2px;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    footer a {
+        font-size: 3.5vw;
+    }
+
+    .nav-effects a:hover {
+        font-size: 4vw;
+    }
+
+    .footer-container a:hover {
+        font-size: 3.5vw;
+    }
+
+    .footer-container {
+        gap: 0px 0px;
+    }
+
+    .footer-grid-item.linkedin {
+        padding-left: 90px;
+    }
+
+}
