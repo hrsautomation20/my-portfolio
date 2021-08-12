@@ -426,3 +426,112 @@ footer a {
         padding-right: 25px;
     }
 }
+
+/* Media Screen 768px */
+
+@media screen and (max-width: 768px) {
+
+    header a,
+    footer a {
+        font-size: 3vw;
+    }
+
+    .nav-effects a:hover {
+        font-size: 3vw;
+    }
+
+    .footer-container a:hover {
+        font-size: 1.8vw;
+    }
+
+    .hero {
+        background-attachment: scroll;
+    }
+
+    .about-me-grid-container {
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px 5px;
+    }
+
+    .about-me-item.about-me-title {
+        padding: 0px 0px 0px 0px;
+        font-size: 25px;
+        grid-column: 1 / span 3;
+        grid-row: 1 /span 1;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid var(--about-me-work-border);
+        align-self: flex-start;
+    }
+
+    .about-me-item.p1,
+    .about-me-item.p2 {
+        padding-left: 0px;
+    }
+
+    .work-wrapper {
+        margin-top: 15px;
+    }
+
+    .work-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: .5fr repeat(12, 1fr);
+        gap: 2.5px 2.5px;
+    }
+
+    .work-item.work-title {
+        font-size: 35px;
+        grid-column: 1 / span 4;
+        grid-row: 1 /span 1;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        border-bottom: 2px solid var(--about-me-work-border);
+        border-right: none;
+        align-self: flex-start;
+    }
+
+    .work-item-project.code-refactor {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 3;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.led-wall {
+        grid-column: 1 / span 4;
+        grid-row: 5 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.pastel-puzzels {
+        grid-column: 1 / span 4;
+        grid-row: 7 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.calculator {
+        grid-column: 1 / span 4;
+        grid-row: 9 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.run-buddy {
+        grid-column: 1 / span 4;
+        grid-row: 11 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .footer-wrapper {
+        margin-top: 10px;
+    }
+}
