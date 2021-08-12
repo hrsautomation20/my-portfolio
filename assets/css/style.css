@@ -12,17 +12,19 @@
     --lightgray: lightgray;
     --about-me-work-border: #333366;
     --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
-    /* Fontstyling */
-    --custom-font-family: 'Roboto', 'Style Script', 'cursive', sans-serif;
+    /* Font-Family Styling */
+    --fontcg: 'Cormorant Garamond', sans-serif;
+
+
 }
 
-/* =============== SEMANTIC CSS CODE (START) ===============   */
+/* ============== SEMANTIC CSS CODE (START) =============== */
 
 html {
     scroll-behavior: smooth;
 }
 
-/* HEADER STYLING (START)  */
+/* HEADER STYLING (START) */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,12 +34,8 @@ header {
 }
 
 header h1 {
-    padding: 0px 0px 0px 50px;
-    /* font-family: 'Style Script', sans-serif; */
-    /* font-size: 2.8vw; */
+    padding: 10px 0px 0px 50px;
 }
-
-
 
 header nav ul {
     display: flex;
@@ -50,18 +48,14 @@ header nav ul {
 }
 
 header nav ul li {
-    /*Viewport font-size to help with the responsiveness of the web page */
     font-size: 1.8vw;
-    /* Align nave element to closely match the header h1 element*/
     padding: 10px 15px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 header a {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
+    padding: 0 10px 5px 10px;
     text-decoration: none;
     border-bottom: 2px solid var(--lightskyblue);
     color: var(--lightskyblue);
@@ -71,20 +65,15 @@ header a {
 
 /* BODY STYLING (START)  */
 body {
-    background-color: var(--lightgray);
-    /* Apply background to all of the body of the page */
-    /* googleapis font family Karla */
-    font-family: var(--custom-font-family);
+    background: var(--lightgray);
 }
 
 /* BODY STYLING (END)  */
 
 /* FOOTER STYLING (START)  */
 footer {
-    /* Apply background to all of the body of the page */
     background-color: var(--header-footer-background-color);
     color: var(--lightskyblue);
-    /* Title color */
 }
 
 footer a {
@@ -92,14 +81,14 @@ footer a {
     border-bottom: 2px solid var(--lightskyblue);
     color: var(--lightskyblue);
     font-size: 1.8vw;
-
 }
 
 /* FOOTER STYLING (END)  */
 
-/* =============== SEMANTIC CSS CODE (END) ===============   */
+/* ============== SEMANTIC CSS CODE (END) =============== */
 
-/* HOVER EFFECT STYLING (START)  */
+
+/* Header nav hover  */
 .nav-effects a:hover {
     color: var(--lightskyblue);
     font-weight: bold;
@@ -108,32 +97,44 @@ footer a {
 
 .footer-container a:hover {
     color: var(--lightskyblue);
+    font-weight: bold;
     text-shadow: 0px 0px 20px var(--lightskyblue);
 }
 
-/* HOVER EFFECT STYLING (END)  */
+.work-grid-container div:hover {
+    mix-blend-mode: difference;
+}
 
+.work-grid-container .work-item-project.ghost-item:hover {
+    opacity: 0;
+}
 
+/* Hover effect on classes (End)  */
+
+/* Section/hero class with background (Start) */
 .hero {
     height: 400px;
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
     background-size: cover;
-    background-position: center 100%;
+    background-position: center 160%;
     background-attachment: fixed;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
-    background-image: url(../images/image.jpg);
+    background-image: url(/assets/images/image.jpg);
 }
+
 
 .hero-subtitle {
     padding: 0px 15px 15px 0px;
-
 }
 
+/* section/hero class with background (End)*/
+
+/* Span styling (Start)  */
 .span-background {
     background-color: var(--lightskyblue);
     position: relative;
@@ -156,6 +157,9 @@ footer a {
     font-size: small;
 }
 
+/* Span styling (End)  */
+
+/* Flex footer styling (Start)  */
 .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -190,6 +194,9 @@ footer a {
     grid-row: 2;
 }
 
+/* Flex footer styling (End)  */
+
+/* Flex Styling for Aboutme (Start) */
 .about-me-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -228,6 +235,9 @@ footer a {
     line-height: 1.5rem;
 }
 
+/* Flex Styling for Aboutme (End) */
+
+/* Flex Styling for Work/Projects (Start)  */
 .work-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -242,6 +252,7 @@ footer a {
     grid-template-columns: 1fr repeat(4, 2fr);
     grid-template-rows: repeat(13, 1fr);
     gap: 10px 10px;
+    /* GAP on X and Y */
 }
 
 .work-item.work-title {
@@ -263,6 +274,7 @@ footer a {
     padding: 0px 0px 15px 0px;
     text-align: left;
     border: .25vw solid var(--rgba-border-color-opacity);
+    cursor: pointer;
 }
 
 .work-item-project.led-wall {
@@ -275,6 +287,7 @@ footer a {
     padding: 0px 0px 15px 0px;
     text-align: left;
     border: .25vw solid var(--rgba-border-color-opacity);
+    cursor: pointer;
 }
 
 .work-item-project.pastel-puzzels {
@@ -287,6 +300,7 @@ footer a {
     padding: 0px 0px 15px 0px;
     text-align: left;
     border: .25vw solid var(--rgba-border-color-opacity);
+    cursor: pointer;
 }
 
 .work-item-project.run-buddy {
@@ -299,6 +313,7 @@ footer a {
     padding: 0px 0px 15px 0px;
     text-align: left;
     border: .25vw solid var(--rgba-border-color-opacity);
+    cursor: pointer;
 }
 
 .work-item-project.calculator {
@@ -311,15 +326,18 @@ footer a {
     padding: 0px 0px 15px 0px;
     text-align: left;
     border: .25vw solid var(--rgba-border-color-opacity);
+    cursor: pointer;
 }
 
 .work-item-project.ghost-item {
-    grid-column: 4/span 1;
+    grid-column: 3/span 1;
     opacity: 0;
 }
 
+/* Flex Styling for Work/Projects (End)  */
 
-/* =============== MediaQueries (Start) =============== */
+
+/* =============== MEDIA QUERIES (START) =============== */
 
 /* Media screen 980px */
 @media screen and (max-width: 980px) {
@@ -329,8 +347,6 @@ footer a {
 
     header h1 {
         padding: 0px;
-
-
     }
 
     .hero-subtitle {
@@ -351,7 +367,7 @@ footer a {
 
     .about-me-grid-container {
         grid-template-columns: repeat(3, 2fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap: 5px 5px;
     }
 
@@ -363,6 +379,7 @@ footer a {
         text-align: center;
         border-right: none;
         border-bottom: 2px solid var(--about-me-work-border);
+        align-self: flex-start;
     }
 
     .about-me-item.p1 {
@@ -374,7 +391,7 @@ footer a {
     .about-me-item.p2 {
         padding: 5px 0px 10px 0px;
         grid-column: 1 /span 3;
-        grid-row: 3 / span 2;
+        grid-row: 4 / span 2;
     }
 
     .footer-wrapper {
@@ -425,6 +442,69 @@ footer a {
         align-self: center;
         padding-right: 25px;
     }
+
+    .work-wrapper {
+        margin-top: 15px;
+    }
+
+    .work-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: .5fr repeat(12, 1fr);
+        gap: 2.5px 2.5px;
+
+    }
+
+    .work-item.work-title {
+        font-size: 35px;
+        grid-column: 1 / span 4;
+        grid-row: 1 /span 1;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        border-bottom: 2px solid var(--about-me-work-border);
+        border-right: none;
+        align-self: flex-start;
+    }
+
+    .work-item-project.code-refactor {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 3;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.led-wall {
+        grid-column: 1 / span 4;
+        grid-row: 5 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.pastel-puzzels {
+        grid-column: 1 / span 4;
+        grid-row: 7 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.calculator {
+        grid-column: 1 / span 4;
+        grid-row: 9 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
+    .work-item-project.run-buddy {
+        grid-column: 1 / span 4;
+        grid-row: 11 / span 2;
+        align-items: flex-end;
+        text-align: center;
+        background-position: scroll;
+    }
+
 }
 
 /* Media Screen 768px */
@@ -540,7 +620,7 @@ footer a {
     header a {
         font-size: 4vw;
     }
-
+    
     header nav ul {
         padding-right: 0px;
         justify-content: center;
@@ -575,3 +655,5 @@ footer a {
     }
 
 }
+
+/* =============== MEDIA QUERIES (END) =============== */
