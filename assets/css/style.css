@@ -13,7 +13,7 @@
     --about-me-work-border: #333366;
     --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
     /* Font-Family Styling */
-    --fontcg: 'Cormorant Garamond', sans-serif;
+    --fontcg: 'Roboto', sans-serif;
 
 
 }
@@ -105,6 +105,10 @@ footer a {
     mix-blend-mode: difference;
 }
 
+.work-item.work-title:hover {
+    mix-blend-mode: normal;
+}
+
 .work-grid-container .work-item-project.ghost-item:hover {
     opacity: 0;
 }
@@ -126,7 +130,6 @@ footer a {
     align-items: flex-end;
     background-image: url(/assets/images/image.jpg);
 }
-
 
 .hero-subtitle {
     padding: 0px 15px 15px 0px;
@@ -267,7 +270,7 @@ footer a {
 .work-item-project.code-refactor {
     grid-column: 2 /span 4;
     grid-row: 1 / span 6;
-    background-image: url("../images/horiseon.png");
+    background: url("../images/horiseon.png");
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -277,10 +280,10 @@ footer a {
     cursor: pointer;
 }
 
-.work-item-project.led-wall {
+.work-item-project.password-generator {
     grid-column: 2 /span 2;
     grid-row: 7 / span 3;
-    background-image: url("../images/led.jpg");
+    background: url("../images/password.jpg") 100%;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -293,7 +296,7 @@ footer a {
 .work-item-project.pastel-puzzels {
     grid-column: 4 / span 2;
     grid-row: 7 / span 3;
-    background-image: url("../images/puzzels.jpg");
+    background: url("../images/puzzels.jpg") 100%;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -306,7 +309,7 @@ footer a {
 .work-item-project.run-buddy {
     grid-column: 4 / span 2;
     grid-row: 10 / span 3;
-    background-image: url("../images/runbuddy.jpg");
+    background: url("../images/runbuddy.jpg") 100%;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -319,7 +322,7 @@ footer a {
 .work-item-project.calculator {
     grid-column: 2 / span 2;
     grid-row: 10 / span 3;
-    background-image: url("../images/calculator.jpg");
+    background: url("../images/calculator.jpg") 100%;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -422,6 +425,7 @@ footer a {
         padding-right: 25px;
     }
 
+
     .footer-grid-item.email {
         grid-column: 2 / span 1;
         grid-row: 2 /span 2;
@@ -473,7 +477,7 @@ footer a {
         background-position: scroll;
     }
 
-    .work-item-project.led-wall {
+    .work-item-project.password-generator {
         grid-column: 1 / span 4;
         grid-row: 5 / span 2;
         align-items: flex-end;
@@ -571,44 +575,39 @@ footer a {
         align-self: flex-start;
     }
 
+    .work-item-project.code-refactor,
+    .work-item-project.password-generator,
+    .work-item-project.pastel-puzzels,
+    .work-item-project.calculator,
+    .work-item-project.run-buddy {
+        text-align: center;
+        background-position: scroll;
+        align-items: flex-end;
+    }
+
     .work-item-project.code-refactor {
         grid-column: 1 / span 4;
         grid-row: 2 / span 3;
-        align-items: flex-end;
-        text-align: center;
-        background-position: scroll;
     }
 
-    .work-item-project.led-wall {
+    .work-item-project.password-generator {
         grid-column: 1 / span 4;
         grid-row: 5 / span 2;
-        align-items: flex-end;
-        text-align: center;
-        background-position: scroll;
     }
 
     .work-item-project.pastel-puzzels {
         grid-column: 1 / span 4;
         grid-row: 7 / span 2;
-        align-items: flex-end;
-        text-align: center;
-        background-position: scroll;
     }
 
     .work-item-project.calculator {
         grid-column: 1 / span 4;
         grid-row: 9 / span 2;
-        align-items: flex-end;
-        text-align: center;
-        background-position: scroll;
     }
 
     .work-item-project.run-buddy {
         grid-column: 1 / span 4;
         grid-row: 11 / span 2;
-        align-items: flex-end;
-        text-align: center;
-        background-position: scroll;
     }
 
     .footer-wrapper {
@@ -620,7 +619,7 @@ footer a {
     header a {
         font-size: 4vw;
     }
-    
+
     header nav ul {
         padding-right: 0px;
         justify-content: center;
