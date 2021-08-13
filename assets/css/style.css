@@ -33,6 +33,7 @@ header {
     background-color: var(--header-footer-background-color);
 }
 
+/* At bigger screens create space on top and left on header  */
 header h1 {
     padding: 10px 0px 0px 50px;
 }
@@ -266,6 +267,7 @@ footer a {
     border-right: 2px solid var(--about-me-work-border);
     overflow-wrap: anywhere;
 }
+
 
 .work-item-project.code-refactor {
     grid-column: 2 /span 4;
