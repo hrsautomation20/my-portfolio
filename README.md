@@ -26,13 +26,17 @@ https://hrsautomation20.github.io/my-portfolio/
 
 ### Use the top right navigation panel to visit different sections of the webpage
 
-Nav Panel
+Navigational Panel
 
 ![nav-menu](./assets/images/portfolioheader.PNG?raw=true "Navigational Menu")
 
 ### Use the rest of the page by scrolling up or down
 
 ![nav-menu](./assets/images/portfoliobody.PNG?raw-true "Body")
+
+### Mobile/Smaller Screen view
+
+![nav-menu](./assets/images/portfoliomobile.png?raw-true "Body")
 
 ---
 
