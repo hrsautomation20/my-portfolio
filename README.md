@@ -1,5 +1,15 @@
 # Hardik's Portfolio
 
+1. [Description](#desc)
+2. [Web Address](#web-address)
+3. [Usage Tips](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+
+---
+
+<a name="desc"></a>
+
 ## Description
 
 Objective of this exercise was to create a personal portfolio site. As i move forward will be adding new project to enhance the over all site.
@@ -7,6 +17,8 @@ Objective of this exercise was to create a personal portfolio site. As i move fo
 Currently the work i have listed in the site we have not done those in class but will be linking those once completed.
 
 ---
+
+<a name="web-address"></a>
 
 ## How to view my portfolio
 
@@ -21,6 +33,8 @@ https://hrsautomation20.github.io/my-portfolio/
 ```
 
 ---
+
+<a name="usage"></a>
 
 ## Usage Tips
 
@@ -40,9 +54,15 @@ Navigational Panel
 
 ---
 
+<a name="contributing"></a>
+
 ## Contributing
 
 For the website enhancement please contact the repo owner and provide the feedback. For local copy pull/download.zip files are welcome.
+
+---
+
+<a name="license"></a>
 
 ## License
 
