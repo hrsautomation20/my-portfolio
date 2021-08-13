@@ -28,11 +28,11 @@ https://hrsautomation20.github.io/my-portfolio/
 
 Nav Panel
 
-![nav-menu] (./assets/images/portfolioheader.PNG?raw=true "Navigational Menu")
+![nav-menu](./assets/images/portfolioheader.PNG?raw=true "Navigational Menu")
 
 ### Use the rest of the page by scrolling up or down
 
-![nav-menu] (./assets/images/portfoliobody.PNG?raw-true "Body")
+![nav-menu](./assets/images/portfoliobody.PNG?raw-true "Body")
 
 ---
 
