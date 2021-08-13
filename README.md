@@ -28,8 +28,22 @@ https://hrsautomation20.github.io/my-portfolio/
 
 Nav Panel
 
-![nav-menu] (./assets/images/portfolioheader.PNG "Navigational Menu")
+![nav-menu] (./assets/images/portfolioheader.PNG?raw=true "Navigational Menu")
 
 ### Use the rest of the page by scrolling up or down
 
-![nav-menu] (./assets/images/portfoliobody.PNG "Body")
+![nav-menu] (./assets/images/portfoliobody.PNG?raw-true "Body")
+
+---
+
+## Contributing
+
+For the website enhancement please contact the repo owner and provide the feedback. For local copy pull/download.zip files are welcome.
+
+## License
+
+No License are required
+
+---
+
+© 2021 HR All Rights Reserved.
