@@ -10,7 +10,7 @@
 
 <a name="desc"></a>
 
-## Description
+## 1. Description
 
 Objective of this exercise was to create a personal portfolio site. As i move forward will be adding new project to enhance the over all site.
 
@@ -20,7 +20,7 @@ Currently the work i have listed in the site we have not done those in class but
 
 <a name="web-address"></a>
 
-## How to view my portfolio
+## 2. How to view my portfolio
 
 Click on the below link to access the Portfolio
 
@@ -36,7 +36,7 @@ https://hrsautomation20.github.io/my-portfolio/
 
 <a name="usage"></a>
 
-## Usage Tips
+## 3. Usage Tips
 
 ### Use the top right navigation panel to visit different sections of the webpage
 
@@ -56,7 +56,7 @@ Navigational Panel
 
 <a name="contributing"></a>
 
-## Contributing
+## 4. Contributing
 
 For the website enhancement please contact the repo owner and provide the feedback. For local copy pull/download.zip files are welcome.
 
@@ -64,7 +64,7 @@ For the website enhancement please contact the repo owner and provide the feedba
 
 <a name="license"></a>
 
-## License
+## 5. License
 
 No License are required
 
