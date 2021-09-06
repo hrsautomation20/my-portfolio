@@ -308,10 +308,10 @@ footer a {
     cursor: pointer;
 }
 
-.work-item-project.run-buddy {
+.work-item-project.work-scheduler {
     grid-column: 4 / span 2;
     grid-row: 10 / span 3;
-    background: url("../images/runbuddy.jpg") 100%;
+    background: url("../images/workday.jpg") 100%;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -503,7 +503,7 @@ footer a {
         background-position: scroll;
     }
 
-    .work-item-project.run-buddy {
+    .work-item-project.work-scheduler {
         grid-column: 1 / span 4;
         grid-row: 11 / span 2;
         align-items: flex-end;
@@ -581,7 +581,7 @@ footer a {
     .work-item-project.password-generator,
     .work-item-project.code-quiz,
     .work-item-project.calculator,
-    .work-item-project.run-buddy {
+    .work-item-project.work-scheduler {
         text-align: center;
         background-position: scroll;
         align-items: flex-end;
@@ -607,7 +607,7 @@ footer a {
         grid-row: 9 / span 2;
     }
 
-    .work-item-project.run-buddy {
+    .work-item-project.work-scheduler {
         grid-column: 1 / span 4;
         grid-row: 11 / span 2;
     }
