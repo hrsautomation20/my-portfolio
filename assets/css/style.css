@@ -321,10 +321,10 @@ footer a {
     cursor: pointer;
 }
 
-.work-item-project.calculator {
+.work-item-project.weather_dashboard {
     grid-column: 2 / span 2;
     grid-row: 10 / span 3;
-    background: url("../images/calculator.jpg") 100%;
+    background: url("../images/weather.jpg") 100%;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -495,7 +495,7 @@ footer a {
         background-position: scroll;
     }
 
-    .work-item-project.calculator {
+    .work-item-project.weather_dashboard {
         grid-column: 1 / span 4;
         grid-row: 9 / span 2;
         align-items: flex-end;
@@ -580,7 +580,7 @@ footer a {
     .work-item-project.code-refactor,
     .work-item-project.password-generator,
     .work-item-project.code-quiz,
-    .work-item-project.calculator,
+    .work-item-project.weather_dashboard,
     .work-item-project.work-scheduler {
         text-align: center;
         background-position: scroll;
@@ -602,7 +602,7 @@ footer a {
         grid-row: 7 / span 2;
     }
 
-    .work-item-project.calculator {
+    .work-item-project.weather_dashboard {
         grid-column: 1 / span 4;
         grid-row: 9 / span 2;
     }
